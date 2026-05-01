@@ -56,41 +56,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
 	<!-- END LOADER -->
 <div class="layout-container site" id="page">
-	<div id="wrapper-navbar">
+	<header class="site-header header-main-layout">
+		<div id="wrapper-navbar" class="header-wrapper">
 
-		
-		<nav id="main-nav" class="navbar navbar-expand-md navbar_dark bg_primary" aria-labelledby="main-nav-label">
+			
+			<nav id="main-menu-nav" class="navbar_navbar_dark bg_primary">
 
-		
-
-			<div class="container">
-	
-
-					<!-- Your site title as branding in the menu -->
-					<div class="site-logo-img">
-					 <?php bloginfo( 'name' ); ?>
-					</div>
-					<!-- end custom logo -->
-
-				
-
-				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'beco-main-menu',
-						'container_id'    => 'main-header-navigation',
-						'menu_class'      => 'nav_desktop',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu-principal',
-						'depth'           => 2,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-					)
-				); ?>
-		
-			</div><!-- .container -->
 			
 
-		</nav><!-- .site-navigation -->
+				<div class="container">
+		
 
-	</div><!-- #wrapper-navbar end -->
+						<!-- Your site title as branding in the menu -->
+						<div class="site-logo-img">
+							<a href="#" class="custom-logo-link" rel="home" aria-current="page">
+								<img src="" class="custom-logo" alt="<?php bloginfo( 'name' ); ?>" >
+							</a>
+						</div>
+						<!-- end custom logo -->
+
+					
+
+					<!-- The WordPress Menu goes here -->
+					<?php wp_nav_menu(
+						array(
+							'theme_location'  => 'primary',
+							'container_class' => 'beco-main-menu',
+							'container_id'    => 'main-header-navigation',
+							'menu_class'      => 'nav_desktop',
+							'fallback_cb'     => '',
+							'menu_id'         => 'main-menu-principal',
+							'depth'           => 2,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					); ?>
+			
+				</div><!-- .container -->
+				
+
+			</nav><!-- .site-navigation -->
+
+		</div><!-- #wrapper-navbar end -->
+	</header><!-- #header-main-layout -->

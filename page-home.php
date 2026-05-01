@@ -11,9 +11,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<section>
+<section class="block-hero">
     <div class="slider-betbeco">
-        <?php echo do_shortcode( '[slick-slider design="design-3" image_fit="true" sliderheight="400"]' ); ?>
+        
     </div>
 </section>
 

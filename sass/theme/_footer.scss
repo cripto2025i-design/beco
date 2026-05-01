@@ -6,42 +6,15 @@
 }
 
 
-
 .copywrite-text {
     position: relative;
     z-index: 1;
     margin-top: 20px;
 
-    p {
-        font-size: 16px;
-        color: $secondary;
-        margin-bottom: 0;
-
-        a {
-            color: $secondary;
-
-            &:focus,
-            &:hover {
-                color: $primary;
-            }
-        }
-    }
 }
-
 
 
 .wrapper-footer {
     
-    padding: 20px 0;
-    background: #e9ecef;
     
-    .copyright {
-        padding: 20px 0;
-        border-top: 1px solid #000;
-        
-        .text-custom-white {
-            color:  #000;
-            font-size: 1rem;
-        }
-    }
 }
