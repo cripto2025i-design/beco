@@ -1,0 +1,95 @@
+/* :: 7.0 Header CSS */
+
+.topbar {
+    padding-bottom: 10px;
+    
+    .left-side {
+        padding: 10px 0 0;
+        
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                
+                margin-right: 20px;
+                font-size: 1.1rem;
+            }
+        }
+    }
+    
+    .right-side  {
+        padding: 10px 0 0;
+        
+        ul {
+            display: flex;
+            align-self: flex-end;
+            justify-content: flex-end;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                
+                margin-left: 20px;
+                align-self: baseline;
+                position: relative;
+            }
+        }
+    }
+}
+
+
+.navbar_dark {
+    
+    .navbar-nav {
+        
+        
+        .nav-link {
+            
+            font-weight: 400;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: 0.5s;
+            
+            &:hover {
+            color: $primary;
+            }
+        }
+    }
+    
+    .navbar-toggler {
+    background-color:  #FC6400;
+    }
+}
+
+.nav-link {
+   color: #2f3338; 
+}
+.navbar_dark{
+    
+    li {
+        
+        &.active {
+            a {
+             color: $primary;
+            }
+        
+        }
+        
+    }
+    .navbar-toggler-icon {
+        color: #fff;
+        font-size: 2rem;
+        width: auto; 
+        height: auto;
+    }
+    
+}
+    
+
+#main-nav {
+    box-shadow: 0 0 15px 5px rgba(44, 44, 44, 0.2);
+}
