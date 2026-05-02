@@ -69,7 +69,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 						<!-- Your site title as branding in the menu -->
 						<div class="site-logo-img">
-							<a href="#" class="custom-logo-link" rel="home" aria-current="page">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="custom-logo-link" rel="home">
 								<img  class="custom-logo" src="<?php echo get_template_directory_uri(); ?>/images/logo_beco.png" alt="Betbeco" >
 							</a>
 						</div>

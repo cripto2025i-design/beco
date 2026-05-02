@@ -7,8 +7,19 @@
     left: 0;
     right: 0;
     z-index: 999;
+    padding: 16px 0;
+    height: 84px;
 }
 
+.site-nav-main {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 999;
+}
 .main-navigation {
 
     .main-ul {
@@ -16,3 +27,10 @@
     }
 
 }
+
+.site-logo-img {
+    .custom-logo {
+        max-width: 192px;
+    }
+}
+
