@@ -1,2 +1,18 @@
 /* :: 7.0 Header CSS */
 @use "base/variables" as *;
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.main-navigation {
+
+    .main-ul {
+        display: flex;
+    }
+
+}

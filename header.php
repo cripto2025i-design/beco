@@ -81,9 +81,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<?php wp_nav_menu(
 						array(
 							'theme_location'  => 'primary',
-							'container_class' => 'beco-main-menu',
+							'container_class' => 'beco-main-menu main-navigation',
 							'container_id'    => 'main-header-navigation',
-							'menu_class'      => 'nav_desktop',
+							'menu_class'      => 'nav_desktop main-ul',
 							'fallback_cb'     => '',
 							'menu_id'         => 'main-menu-principal',
 							'depth'           => 2,
@@ -98,3 +98,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		</div><!-- #wrapper-navbar end -->
 	</header><!-- #header-main-layout -->
+	
+

@@ -11,12 +11,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<section class="block-hero">
-    <div class="slider-betbeco">
+<section class="hero-block">
+    <div class="hero-bg" id="heroBgImg" style="transform: scale(1.08) translate(-7.47613px, -0.70829px);">
         
     </div>
 </section>
-
+<!-- #hero -->
 
 <div class="wrapper" id="page-wrapper">
 
