@@ -159,3 +159,5 @@ function disable_comments_admin_menu_redirect() {
     }
 }
 add_action('admin_init', 'disable_comments_admin_menu_redirect');
+
+add_filter('show_admin_bar', '__return_false');
