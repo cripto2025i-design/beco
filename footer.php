@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="copyright site-info">
 
-						 <p class="text-custom-white no-margin">© <?php echo date("Y"); ?> betbeco.com. </p>
+						 <p class="text-custom-white no-margin">© <?php echo date("Y"); ?> betbeco</p>
 
 					</div><!-- .site-info -->
 

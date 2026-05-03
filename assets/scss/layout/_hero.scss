@@ -10,4 +10,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.hero-wrap-item {
+    max-width: 80%;
+    margin:  0 auto;
+}
+.hero-title {
+    color: $white;
+    font-size: larger;
 }
