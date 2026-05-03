@@ -1,5 +1,13 @@
 /* :: 7.0 Header CSS */
 @use "base/variables" as *;
-.hero {
-    position: relative
-};
+.hero-block {
+    padding-bottom: 10px;
+    width: 100%;
+}
+.hero-bg {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+}

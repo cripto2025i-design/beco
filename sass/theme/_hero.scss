@@ -1,13 +1,13 @@
 /* :: 7.0 Header CSS */
 
-.topbar {
+.hero-block {
     padding-bottom: 10px;
-    
-    
+    width: 100%;
 }
-
-.navbar_dark {
-    
-    
+.hero-bg {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
 }
-

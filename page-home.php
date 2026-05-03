@@ -12,7 +12,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <section class="hero-block">
-    <div class="hero-bg" id="heroBgImg" style="transform: scale(1.08) translate(-7.47613px, -0.70829px);">
+    <div class="hero-bg" id="heroBgImg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/concept-engineering.jpg);">
+
+	
         
     </div>
 </section>
