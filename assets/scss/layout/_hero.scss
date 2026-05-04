@@ -16,8 +16,11 @@
 .hero-wrap-item {
     max-width: 80%;
     margin:  0 auto;
+    background-color: $white;
+    padding: 10px 15px;
 }
 .hero-title {
-    color: $white;
-    font-size: larger;
+    color: $black;
+    font-size: 2.8rem;
+    
 }

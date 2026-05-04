@@ -14,8 +14,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 <section class="hero-block">
     <div class="hero-bg" id="heroBgImg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/workplace-top-view-construction.jpg);">
 
-		<div class="hero-wrap-item">
-			<h2 class="hero-title">Bureau d'études structure</h2>
+		<div class="hero-wrap-item"> 
+			<div class="hero_text">
+				<h2 class="hero-title">Bureau d'études structure</h2>
+			</div>
 		</div>
         
     </div>

@@ -57,14 +57,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- END LOADER -->
 <div class="layout-container site" id="page">
 	<header class="site-header header-main-layout">
-		<div id="wrapper-navbar" class="header-wrapper">
+		<div id="wrapper-navbar" class="header-wrapper relative w-full bg-white">
+
 
 			
-			<nav id="main-menu-nav" class="navbar_navbar_dark bg_primary">
 
-			
-
-				<div class="header_inner flex">
+				<div class="header_inner inner-bar flex ">
 		
 
 						<!-- Your site title as branding in the menu -->
@@ -94,7 +92,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div><!-- .container -->
 				
 
-			</nav><!-- .site-navigation -->
+			
 
 		</div><!-- #wrapper-navbar end -->
 	</header><!-- #header-main-layout -->
