@@ -1,0 +1,10 @@
+/* :: 7.0 Header CSS */
+@use "base/variables" as *;
+
+.statistics_container {
+    width: calc(90% + 0px);
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 3rem;
+}

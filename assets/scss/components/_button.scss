@@ -1,0 +1,10 @@
+@use "base/variables" as *;
+.site-button {
+	font-size: 1.125rem;
+	padding: 18px 25px;
+	border: 1px solid #e4610f;
+	background: #e4610f;
+    border-radius: 5px;
+	line-height: 17.6px;
+    color: #fff;
+}
