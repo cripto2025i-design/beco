@@ -1,10 +1,39 @@
 /* :: 7.0 Header CSS */
 @use "base/variables" as *;
 
+.chiffres-cles {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .statistics_container {
-    width: calc(90% + 0px);
+    width: calc(98% + 0px);
     display: flex;
     align-items: center;
     margin: 0 auto;
-    gap: 3rem;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.counter-item  {
+    .line {
+        width: 80px;
+        height: 2px;
+        background-color: $color-primary;
+        margin-top: 5px;
+        margin-bottom: 11px;
+
+    }
+   
+}
+.statistics_item_title  {
+    font-size: 38px;
+    font-weight: 700;
+    font-style: normal;
+    color: $shin-agency;
+}
+
+.statistics_item_description {
+    font-size: 20px;
+    color: #252525;
+    text-transform: uppercase;
 }

@@ -34,36 +34,42 @@ $container = get_theme_mod( 'understrap_container_type' );
 <section id="chiffres-cles" class="chiffres-cles">
     <div class="container tf-container">
         <div class="statistics_container wrap-counter tf-grid-layout tf-col-2 gap_10">
-            <div class="counter-item d-flex flex-column">
-                <div class="counter text-display-2 text_primary fw-6 font-2"><span class="numberCounter" data-count="15"
-                        data-duration="700">+300</span>
+            <div class="statistics_item counter-item d-flex flex-column">
+                <div class="statistics_item_title counter text-display-2 text_primary fw-6 font-2"><span class="numberCounter" data-count="15"
+                        data-duration="700">300</span><span class="sub-counter">+</span>
                 </div>
                 <div class="line"></div>
-                <h5 class="sub-title text_secondary">Projets livrés</h5>
+                <h5 class="sub-title text_secondary statistics_item_description">Projets livrés</h5>
             </div>
-            <div class="counter-item d-flex flex-column">
-                <div class="counter text-display-2 text_primary fw-6 font-2"><span class="numberCounter" data-count="15"
-                        data-duration="700">+10</span><span class="sub-counter">+</span></div>
+            <div class="statistics_item counter-item d-flex flex-column">
+                <div class="statistics_item_title counter text-display-2 text_primary fw-6 font-2"><span class="numberCounter" data-count="15"
+                        data-duration="700">10</span><span class="sub-counter">+</span></div>
                 <div class="line"></div>
-                <h5 class="sub-title text_secondary">Ans d'expérience</h5>
+                <h5 class="sub-title text_secondary statistics_item_description">Ans d'expérience</h5>
             </div>
-            <div class="counter-item d-flex flex-column">
-                <div class="counter text-display-2 text_primary fw-6 font-2"><span class="numberCounter"
-                        data-count="120" data-duration="700">+30</span><span class="sub-counter">+</span></div>
+            <div class="statistics_item counter-item d-flex flex-column">
+                <div class="statistics_item_title counter text-display-2 text_primary fw-6 font-2"><span class="numberCounter"
+                        data-count="120" data-duration="700">30</span><span class="sub-counter">+</span></div>
                 <div class="line"></div>
-                <h5 class="sub-title text_secondary">Collaborateurs</h5>
-            </div>
-            <div class="counter-item d-flex flex-column">
-                <div class="counter text-display-2 text_primary fw-6 font-2"><span class="numberCounter"
-                        data-count="500" data-duration="700">100%</span><span class="sub-counter">+</span></div>
-                <div class="line"></div>
-                <h5 class="sub-title text_secondary">délais respectés</h5>
+                <h5 class="sub-title text_secondary statistics_item_description">Collaborateurs</h5>
             </div>
 
         </div>
 
     </div>
     
+</section>
+<section class="section-service">
+    <div class="tf-container large">
+        <h4 class="sub-title">Services</h4>
+    </div>
+</section>
+<section class="section-service">
+    <div>
+        <h2 class="title">
+            <span>Nos</span> réalisations
+        </h2>
+    </div>
 </section>
 <section class="section-white" aria-labelledby="about-title">
         <div class="wrapper self-stretch px-5 py-10 items-center lg:items-start lg:px-20 lg:py-20 flex flex-col gap-20">
