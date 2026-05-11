@@ -65,10 +65,16 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 </section>
 <section class="section-service">
-    <div>
+    <div class="">
         <h2 class="title">
             <span>Nos</span> réalisations
         </h2>
+        <h3>Découvrez nos réalisations</h3>
+
+    </div>
+    <div>
+        <a href="">Toutes nos réalisations</a>
+        
     </div>
 </section>
 <section class="section-white" aria-labelledby="about-title">
