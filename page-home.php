@@ -72,6 +72,26 @@ $container = get_theme_mod( 'understrap_container_type' );
         <h3>Découvrez nos réalisations</h3>
 
     </div>
+    <div class="wrapper_list">
+        <?php
+        $args = array(
+            'post_type' => 'realisation',
+            'posts_per_page' => 6
+        );
+
+        $query = new WP_Query($args);
+
+        if($query->have_posts()) :
+
+        while($query->have_posts()) :
+        $query->the_post();
+        ?>
+         <h3 class="text-2xl font-bold mb-3">
+            <?php the_title(); ?>
+        </h3>
+        <?php endwhile; wp_reset_postdata(); endif; ?>
+
+    </div>
     <div>
         <a href="">Toutes nos réalisations</a>
         
