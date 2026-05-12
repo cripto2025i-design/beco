@@ -1,0 +1,12 @@
+/* :: 7.0 Header CSS */
+@use "base/variables" as *;
+
+.section-projects {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.projects-item-info {
+    padding: 10px;
+    max-width: 100%;
+}

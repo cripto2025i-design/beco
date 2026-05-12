@@ -43,7 +43,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <?php while($wp_query->have_posts()): $wp_query->the_post(); ?>
                         <div class="wt-item">
                             <div class="wt-content text-center">
-                                 <?php the_post_thumbnail(); ?> 
+                                 <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
                             </div>
                             <div class="wt-tilte  m-b10 m-t0 text-right">
                                 <h3 class="wt-name"><?php the_title(); ?> </h3>
