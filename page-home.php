@@ -31,7 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
 </section>
 <!-- #hero -->
-<section id="chiffres-cles" class="chiffres-cles">
+<section id="chiffres-cles" class="block-section chiffres-cles">
     <div class="container tf-container">
         <div class="statistics_container wrap-counter tf-grid-layout tf-col-2 gap_10">
             <div class="statistics_item counter-item d-flex flex-column">
@@ -59,12 +59,12 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
     
 </section>
-<section class="section-service">
+<section class="block-section section-service">
     <div class="tf-container large">
         <h4 class="sub-title">Services</h4>
     </div>
 </section>
-<section class="section-service">
+<section class="block-section section-service">
     <div class="">
         <h2 class="title">
             <span>Nos</span> réalisations
@@ -97,7 +97,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         
     </div>
 </section>
-<section class="section-white" aria-labelledby="about-title">
+<section class="block-section section-white" aria-labelledby="about-title">
         <div class="wrapper self-stretch px-5 py-10 items-center lg:items-start lg:px-20 lg:py-20 flex flex-col gap-20">
             <div class="self-stretch flex flex-col justify-start items-center lg:items-start gap-10">
                 <span class="label label-solid-orange" aria-label="About Us">

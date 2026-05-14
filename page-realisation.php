@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			 <div class="masonry-item cat-1 col-lg-4 col-md-6 col-sm-6 m-b30 aos-item" data-aos="fade-right" data-aos-delay="100">
+			 <div class="coh-column" data-aos="fade-right" data-aos-delay="100">
                    <?php
                     
                         $args = array('post_type' => 'realisation', 

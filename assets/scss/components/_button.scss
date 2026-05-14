@@ -14,7 +14,9 @@
 } 
 
 .btn-secondary {
+	color: #fff;
 	background-color: #a3a3a3; 
+	font-size: 14px;
 	border-radius: 0px;
 	padding: 10px;
     transition-duration: .3s;
@@ -24,4 +26,26 @@
 }
 .btn-outline-light {
 	border: 1px solid #fff;
+}
+
+.section-button {
+	overflow: hidden;
+    padding: 15px 21px;
+	position: relative;
+    align-self: flex-start;
+	
+}
+.bc-btn-outline{
+	border-color:#fff;
+	color: #fff;
+	line-height: 1.5715;
+	text-align: center;
+	border: 1px solid #d9d9d9;
+}
+
+.bc-btn-outline {
+	span {
+		white-space: break-spaces;
+	}
+	
 }
