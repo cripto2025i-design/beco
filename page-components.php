@@ -21,6 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="">
 
 						<a href="#" class="bc-btn-outline">Cliquez ici pour en savoir plus</a>
+						<p><a href="#" class="button-secondary">Cliquez ici pour en savoir plus</a></p>
 					</div>
 				</div>
 			</section>

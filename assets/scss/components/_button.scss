@@ -24,6 +24,32 @@
 	overflow: hidden;
 	
 }
+
+.button-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  line-height: 1.5;
+  border-width: 1px;
+  border-style: solid;
+  font-weight: 400;
+  font-family: Sora, sans-serif;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
+  border-color: #232323;
+  text-decoration: none;
+   &:hover{
+	background-color: #E95817;
+  	color: #fff;
+  	border-color: #E95817;
+	text-decoration: none;
+
+   }
+}
+
 .btn-outline-light {
 	border: 1px solid #fff;
 }
@@ -48,4 +74,8 @@
 		white-space: break-spaces;
 	}
 	
+}
+
+.bc-button-main {
+	border-color:#fff;
 }

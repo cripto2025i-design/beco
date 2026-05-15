@@ -64,12 +64,12 @@ $container = get_theme_mod( 'understrap_container_type' );
         <h4 class="sub-title">Services</h4>
     </div>
 </section>
-<section class="block-section section-service">
+<section id="section-realisation" class="block-section section-realisation">
     <div class="">
-        <h2 class="title">
+        <h2 class="title mb-4">
             <span>Nos</span> réalisations
         </h2>
-        <h3>Découvrez nos réalisations</h3>
+       
 
     </div>
     <div class="wrapper_list">
@@ -86,14 +86,20 @@ $container = get_theme_mod( 'understrap_container_type' );
         while($query->have_posts()) :
         $query->the_post();
         ?>
-         <h3 class="text-2xl font-bold mb-3">
-            <?php the_title(); ?>
-        </h3>
+    
+        <div class="wt-item">
+            <div class="wt-content text-center">
+                    <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
+            </div>
+            <div class="wt-tilte cs-title text-2xl font-bold mb-3">
+                <h3 class="wt-name"><?php the_title(); ?> </h3>
+            </div>
+        </div>
         <?php endwhile; wp_reset_postdata(); endif; ?>
 
     </div>
     <div>
-        <a href="">Toutes nos réalisations</a>
+        <a href="">Toutes nos réalisations</a>  <h3>Découvrez nos réalisations</h3>
         
     </div>
 </section>
