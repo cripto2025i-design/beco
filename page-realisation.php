@@ -9,54 +9,63 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="wt-bnr-inr overlay-wraper bg-center">
-    <div class="overlay-main site-bg-secondry opacity-07"></div>
+
     <div class="container">
-        <div class="wt-bnr-inr-entry">
-            <div class="banner-title-outer">
-                <div class="section-heading banner-title-name py-4">
-                    <h2 class="site-text-primary"><?php the_title(); ?></h2>
-                </div>
-            </div>                  
+
+        
+        <div class="row">
+         
+                    
+                              
+         
+            
         </div>
+        
     </div>
 </div>
             
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper_tw  pt-site-wrapper" id="page-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div class="container" id="content" tabindex="-1">
 
 		<div class="row">
-
-			 <div class="coh-column" data-aos="fade-right" data-aos-delay="100">
-                   <?php
-                    
-                        $args = array('post_type' => 'realisation', 
-                                      'posts_per_page' => 99
-                        
-                        );
-                        $wp_query = new WP_Query( $args );
-                    ?>
-                    <?php if ($wp_query->have_posts()): ?>
-                    <div class="testimonial-slider ">
-                        
-                        
-                        <?php while($wp_query->have_posts()): $wp_query->the_post(); ?>
-                        <div class="wt-item">
-                            <div class="wt-content text-center">
-                                 <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
-                            </div>
-                            <div class="wt-tilte  m-b10 m-t0 text-right">
-                                <h3 class="wt-name"><?php the_title(); ?> </h3>
-                            </div>
-                        </div>
-
-                        
-                    <?php endwhile; ?>
-
-                    </div>
-                     <?php endif ?>
-                    <?php wp_reset_query(); ?>
+            <div class="projects-intro">
+                <div class="section-heading banner-title-name py-4">
+                    <h2 class="site-text-primary"><?php the_title(); ?></h2>
                 </div>
+                <div class="wt-bnr-inr-entry pt-3">
+                    <?php the_content(); ?>
+                </div> 
+
+            </div>
+            
+
+			 <div class="wrapper_list">
+                <?php
+                $args = array(
+                    'post_type' => 'realisation',
+                    'posts_per_page' => 6
+                );
+
+                $query = new WP_Query($args);
+
+                if($query->have_posts()) :
+
+                while($query->have_posts()) :
+                $query->the_post();
+                ?>
+            
+                <div class="wt-item">
+                    <div class="wt-content text-center">
+                            <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
+                    </div>
+                    <div class="wt-tilte cs-title text-2xl font-bold mb-3">
+                        <h3 class="wt-name"><?php the_title(); ?> </h3>
+                    </div>
+                </div>
+                <?php endwhile; wp_reset_postdata(); endif; ?>
+
+            </div>
 
 		</div><!-- .row -->
 
