@@ -11,27 +11,46 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<section class="hero-block">
+<section class="hero-block pt-site-wrapper">
     <div class="hero-bg" id="heroBgImg" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/workplace-top-view-construction.jpg);">
 
 		<div class="container hero-container">
 			<div class="hero-wrap-item"> 
 				<div class="hero-text">
-					<h2 class="hero-title">Bâtir l'Avenir avec Expertise et Compétitivité</h2>
-					<p>BET BECO est un bureau d'études spécialisé en conception de structures et modélisation BIM. Plus de 100 projets réalisés avec succès.</p>
-					<p>Notre engagement est clair : vous fournir une prestation de qualité, abordable et parfaitement alignée sur vos besoins. </p>
+					<h2 class="hero-title">Bureau d’études structure et modélisation BIM</h2>
+					<p>Solutions techniques fiables, optimisées et conformes aux normes internationales.</p>
+			
 				</div>
-				<div class="hero-actions flex d-flex d-none">
-					<a href="#metiers" class="site-button btn btn-outline-light hero_btn">Qui sommes-nous</a>
-				</div>
+			
 			</div>
 
 		</div>
 		
     </div>
 </section>
-<!-- #hero -->
-<section id="chiffres-cles" class="block-section chiffres-cles">
+<section id="section-who-we-are" class="section-who-we-are py-4">
+    
+        <div class="container tf-container">
+
+            <div class="who-we-are-inner">
+            <h3>Qui sommes nous?</h3>
+            <div class="who-we-are_description">
+                <p>BET BECO (Bureau d’Études BECO) est un bureau d’étude malgache spécialisé en
+                    ingénierie de structures et en modélisation BIM. Fondé en 2019, nous avons rapidement
+                    gagné la confiance d’acteurs locaux et internationaux (DELGABAT, APAVE REUNION,
+                    PIHOUEE & ASSOCIES, VERITAS, etc.) en collaborant sur des projets d’envergure.</p>
+                <p>BET
+                    BECO est aujourd’hui le partenaire stratégique indispensable pour les professionnels du
+                    BTP, les architectes et les maîtres d’ouvrage pour des projets de toute taille.</p>
+            </div>
+            <a class="who-we-are-button d-none" href="#">Découvrir qui nous sommes</a>
+
+         </div>
+        
+        </div>
+
+</section>
+<section id="chiffres-cles" class="chiffres-cles">
     <div class="container tf-container">
         <div class="statistics_container wrap-counter tf-grid-layout tf-col-2 gap_10">
             <div class="statistics_item counter-item d-flex flex-column">
@@ -59,20 +78,14 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
     
 </section>
-<section class="block-section section-service">
-    <div class="tf-container large">
-        <h4 class="sub-title">Services</h4>
-    </div>
-</section>
-<section id="section-realisation" class="block-section section-realisation">
-    <div class="">
-        <h2 class="title mb-4">
-            <span>Nos</span> réalisations
-        </h2>
-       
 
-    </div>
-    <div class="wrapper_list">
+<section id="section-realisation" class="block-section section-realisation py-4">
+    <div class="container tf-container">
+        <h2 class="title mb-4">
+            Nos Réalisations
+        </h2>
+
+        <div class="wrapper_list">
         <?php
         $args = array(
             'post_type' => 'realisation',
@@ -99,86 +112,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     </div>
     <div>
-        <a href="">Toutes nos réalisations</a>  <h3>Découvrez nos réalisations</h3>
+        <a href="#" class="d-none">Toutes nos réalisations</a> 
         
     </div>
-</section>
-<section class="block-section section-white" aria-labelledby="about-title">
-        <div class="wrapper self-stretch px-5 py-10 items-center lg:items-start lg:px-20 lg:py-20 flex flex-col gap-20">
-            <div class="self-stretch flex flex-col justify-start items-center lg:items-start gap-10">
-                <span class="label label-solid-orange" aria-label="About Us">
-                    About Us
-                </span>
+       
 
-                <div
-                    class="self-stretch flex flex-col gap-y-10 lg:gap-y-0 lg:flex-row lg:justify-between items-center lg:items-end">
-                    <div data-aos="fade"
-                        class="max-w-[800px] w-full text-secondary-navy text-3xl font-medium leading-tight lg:mr-5 text-center lg:text-left"
-                        id="about-title">
-                        With decades of experience, we specialize in turning ideas into
-                        <span class="text-primary-orange">well-designed structures</span>
-                        that stand the test of time.
-                    </div>
-                    <a href="about.html" class="btn group btn-outline-dark" aria-label="Get to Know
-                  Us" tabindex="0">
-                        Get to Know
-                        Us
-                        <i class="btn-icon ph ph-arrow-right text-xl" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="self-stretch flex flex-col lg:flex-row justify-between items-center gap-y-20 lg:gap-y-0 lg:items-start"
-                aria-label="Company statistics">
-                <div data-aos="fade-up" data-aos-delay="000"
-                    class="pt-8 border-t-[0.80px] border-base-grey-stroke flex flex-col justify-center items-center gap-4">
-                    <div class="text-center justify-start text-secondary-navy text-6xl font-medium leading-tight"
-                        aria-label="Years of Experience: 10+">
-                        10+
-                    </div>
-                    <div class="text-center justify-start text-base-grey text-lg font-normal leading-tight">
-                        Years of Experience
-                    </div>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="100"
-                    class="pt-8 border-t-[0.80px] border-base-grey-stroke flex flex-col justify-center items-center gap-4">
-                    <div class="text-center justify-start text-secondary-navy text-6xl font-medium leading-tight"
-                        aria-label="Projects Completed: 1500+">
-                        1500+
-                    </div>
-                    <div class="text-center justify-start text-base-grey text-lg font-normal leading-tight">
-                        Projects Completed
-                    </div>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="200"
-                    class="pt-8 border-t-[0.80px] border-base-grey-stroke flex flex-col justify-center items-center gap-4">
-                    <div class="text-center justify-start text-secondary-navy text-6xl font-medium leading-tight"
-                        aria-label="Customer Satisfaction Score: 4.8/5">
-                        4.8/5
-                    </div>
-                    <div class="text-center justify-start text-base-grey text-lg font-normal leading-tight">
-                        Customer Satisfaction Score
-                    </div>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="300"
-                    class="pt-8 border-t-[0.80px] border-base-grey-stroke flex flex-col justify-center items-center gap-4">
-                    <div class="text-center justify-start text-secondary-navy text-6xl font-medium leading-tight"
-                        aria-label="Project Success Rate: 98%">
-                        98%
-                    </div>
-                    <div class="text-center justify-start text-base-grey text-lg font-normal leading-tight">
-                        Project Success Rate
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+    
+</section>
 <div class="wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
 
-			
+			<!-- Do the left sidebar check -->
+			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
 
@@ -197,12 +146,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			</main><!-- #main -->
 
-			
+			<!-- Do the right sidebar check -->
+			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 
 		</div><!-- .row -->
 
 	</div><!-- #content -->
 
 </div><!-- #page-wrapper -->
+
+
 
 <?php get_footer();

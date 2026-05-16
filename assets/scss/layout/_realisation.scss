@@ -1,5 +1,7 @@
-/* :: 7.0 Header CSS */
+/* :: 7.0 realisation CSS */
 @use "base/variables" as *;
+@use "base/mixins" as *;
+
 
 .section-projects {
     padding-top: 20px;
@@ -16,4 +18,13 @@
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
+     @include md-screen {
+      grid-template-columns:1fr
+    }
+
+}
+
+.wt-name {
+    font-size : 1.25rem;
+    padding-top: 10px;
 }
