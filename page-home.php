@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="container tf-container">
 
             <div class="who-we-are-inner">
-            <h3>Qui sommes nous?</h3>
+            <h3 class="text-heading title mb-4">Qui sommes nous?</h3>
             <div class="who-we-are_description">
                 <p>BET BECO (Bureau d’Études BECO) est un bureau d’étude malgache spécialisé en
                     ingénierie de structures et en modélisation BIM. Fondé en 2019, nous avons rapidement
@@ -81,9 +81,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <section id="section-realisation" class="block-section section-realisation py-4">
     <div class="container tf-container">
-        <h2 class="title mb-4">
+        <h3 class="text-heading title mb-4">
             Nos Réalisations
-        </h2>
+        </h3>
 
         <div class="wrapper_list">
         <?php
@@ -119,6 +119,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     </div>
     
+</section>
+<section id="section-faq" class="block-section section-faq py-4">
+    <div class="container tf-container">
+        <h3 class="text-heading title mb-4">
+            Questions fréquentes
+        </h3>
+
+
 </section>
 <div class="wrapper" id="page-wrapper">
 

@@ -1,5 +1,5 @@
 // Layout Style
-
+@use "base/variables" as *;
 .pt-site-wrapper {
     padding-top: 64px;
     min-height: 75vh;
@@ -10,4 +10,22 @@
          color: rgb(244, 116, 36);
     }
 }
-   
+   .text-heading {
+        position: relative;
+        text-align: left;
+        line-height: 42px;
+        padding-bottom: 10px;
+
+
+        &::before {
+            content: '';
+            height: 3px;
+            background: $color-primary;
+            width: 80px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: inline-block;
+        }
+
+   } 

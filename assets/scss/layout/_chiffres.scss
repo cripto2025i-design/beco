@@ -1,4 +1,4 @@
-/* :: 7.0 Header CSS */
+/* :: Chiffres CSS */
 @use "base/variables" as *;
 
 .chiffres-cles {
@@ -17,7 +17,7 @@
 .counter-item  {
     .line {
         width: 80px;
-        height: 2px;
+        height: 3px;
         background-color: $color-primary;
         margin-top: 5px;
         margin-bottom: 11px;
@@ -30,6 +30,8 @@
     font-weight: 700;
     font-style: normal;
     color: $shin-agency;
+    line-height: 1.5;
+
 }
 
 .statistics_item_description {
