@@ -78,7 +78,27 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
     
 </section>
-
+<section>
+    <div class="container">
+        <div class="row it-sv-counter">
+            <div class="col-lg-4 col-md-6">
+                <div class="it-service__item mb-30">
+                    <h3 class="it-service__item-title mb-20">Processus qualité</h3>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="it-service__item mb-30">
+                    <h3 class="it-service__item-title mb-20">Fiabilité technologique</h3>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="it-service__item mb-30">
+                    <h3 class="it-service__item-title mb-20">Veille normative</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="section-realisation" class="block-section section-realisation py-4">
     <div class="container tf-container">
         <h3 class="text-heading title mb-4">

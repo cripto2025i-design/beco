@@ -6,3 +6,20 @@
     padding-bottom: 20px;
 }
 
+
+.listing-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    z-index: 6;
+    margin-bottom: 40px
+}
+
+@media (min-width: 992px) {
+    .listing-content {
+        flex-direction:row
+    }
+}
