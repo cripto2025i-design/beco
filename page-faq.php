@@ -10,11 +10,7 @@ get_header();
 
 <div class="wrapper pt-site-wrapper" id="page-wrapper">
 
-
-		<div class="row">
-
-
-			<section class="block-section">
+		<section class="block-section">
 				 
 
 			<div class="wrapper_tw  pt-site-wrapper" id="page-wrapper">
@@ -32,7 +28,7 @@ get_header();
 
 						</div>
 						
-						<div class="wrapper_list">
+						<div class="wrapper_faq">
 							<?php
 							$args = array(
 								'post_type' => 'faq',
@@ -47,11 +43,17 @@ get_header();
 							$query->the_post();
 							?>
 						
-							<div class="wt-item">
+							<div class="faq-item wt-item">
 								
-								<div class="wt-tilte cs-title text-2xl font-bold mb-3">
+								<div class="faq-header wt-tilte cs-title text-2xl font-bold mb-3">
 									<h3 class="wt-name"><?php the_title(); ?> </h3>
 								</div>
+                <div class="faq-content">
+                  <div class="content-inner">
+                      <?php the_content(); ?>
+                  </div>
+
+                </div>
 							</div>
 							<?php endwhile; wp_reset_postdata(); endif; ?>
 
@@ -173,9 +175,6 @@ get_header();
     </section><!-- /Faq Section -->
 	
 
-		</div><!-- .row -->
-
-	</div><!-- #content -->
 
 </div><!-- #page-wrapper -->
 

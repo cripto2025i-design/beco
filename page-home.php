@@ -58,19 +58,19 @@ $container = get_theme_mod( 'understrap_container_type' );
                         data-duration="700">300</span><span class="sub-counter">+</span>
                 </div>
                 <div class="line"></div>
-                <h5 class="sub-title text_secondary statistics_item_description">Projets livrés</h5>
+                <h3 class="sub-title text_secondary statistics_item_description">Projets livrés</h3>
             </div>
             <div class="statistics_item counter-item d-flex flex-column">
                 <div class="statistics_item_title counter text-display-2 text_primary fw-6 font-2"><span class="numberCounter" data-count="15"
                         data-duration="700">10</span><span class="sub-counter">+</span></div>
                 <div class="line"></div>
-                <h5 class="sub-title text_secondary statistics_item_description">Ans d'expérience</h5>
+                <h3 class="sub-title text_secondary statistics_item_description">Ans d'expérience</h3>
             </div>
             <div class="statistics_item counter-item d-flex flex-column">
                 <div class="statistics_item_title counter text-display-2 text_primary fw-6 font-2"><span class="numberCounter"
                         data-count="120" data-duration="700">30</span><span class="sub-counter">+</span></div>
                 <div class="line"></div>
-                <h5 class="sub-title text_secondary statistics_item_description">Collaborateurs</h5>
+                <h3 class="sub-title text_secondary statistics_item_description">Collaborateurs</h3>
             </div>
 
         </div>
