@@ -80,6 +80,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 </section>
 <section>
     <div class="container">
+
+        <h3 class="text-heading title mb-4">Services</h3>
         <div class="row it-sv-counter">
             <div class="col-lg-4 col-md-6">
                 <div class="it-service__item mb-30">

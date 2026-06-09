@@ -11,7 +11,6 @@ get_header();
 <div class="wrapper pt-site-wrapper" id="page-wrapper">
 
 
-		<div class="row">
 
 
 			<section class="block-section">
@@ -35,7 +34,7 @@ get_header();
 						<div class="wrapper_list">
 							<?php
 							$args = array(
-								'post_type' => 'faq',
+								'post_type' => 'service',
 								'posts_per_page' => 6
 							);
 
@@ -67,9 +66,6 @@ get_header();
 			
 		
 
-		</div><!-- .row -->
-
-	</div><!-- #content -->
 
 </div><!-- #page-wrapper -->
 
