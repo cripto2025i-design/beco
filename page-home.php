@@ -82,8 +82,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="container">
 
         <h3 class="text-heading title mb-4">Services</h3>
-        <div class="row it-sv-counter">
-            <div class="col-lg-4 col-md-6">
+        <div class="it-sv-counter row justify-content-center justify-content-md-start text-center text-md-start">
+            <div class="col-10 col-md-6 col-lg-4 pe-md-4 pe-lg-6">
                 <div class="it-service__item mb-30">
                     <h3 class="it-service__item-title mb-20">Processus qualité</h3>
                 </div>
@@ -148,9 +148,40 @@ $container = get_theme_mod( 'understrap_container_type' );
             Questions fréquentes
         </h3>
 
+        <div class="wrapper_faq">
+            <?php
+            $args = array(
+                'post_type' => 'faq',
+                'posts_per_page' => 6
+            );
 
+            $query = new WP_Query($args);
+
+            if($query->have_posts()) :
+
+            while($query->have_posts()) :
+            $query->the_post();
+            ?>
+						
+				<div class="faq-item wt-item">
+								
+					<div class="faq-header wt-tilte cs-title text-2xl font-bold mb-3">
+						<h3 class="wt-name"><?php the_title(); ?> </h3>
+					</div>
+                    <div class="faq-content">
+                        <div class="content-inner">
+                            <?php the_content(); ?>
+                        </div>
+
+                    </div>
+				</div>
+							<?php endwhile; wp_reset_postdata(); endif; ?>
+
+		</div>
+
+    </div>
 </section>
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper d-none" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
