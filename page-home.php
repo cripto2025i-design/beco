@@ -142,44 +142,53 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
     
 </section>
-<section id="section-faq" class="block-section section-faq py-4">
-    <div class="container tf-container">
-        <h3 class="text-heading title mb-4">
-            Questions fréquentes
-        </h3>
+ <!-- Faq Section -->
+<section id="faq" class="faq section block-section section-faq py-4">
+    
+        <div class="container tf-container">
+            <h3 class="text-heading title mb-4">
+                Questions fréquentes
+            </h3>
 
-        <div class="wrapper_faq">
-            <?php
-            $args = array(
-                'post_type' => 'faq',
-                'posts_per_page' => 6
-            );
+            <div class="faq-wrapper">
+                <?php
+                $args = array(
+                    'post_type' => 'faq',
+                    'posts_per_page' => 6
+                );
 
-            $query = new WP_Query($args);
+                $query = new WP_Query($args);
 
-            if($query->have_posts()) :
+                if($query->have_posts()) :
 
-            while($query->have_posts()) :
-            $query->the_post();
-            ?>
-						
-				<div class="faq-item wt-item">
-								
-					<div class="faq-header wt-tilte cs-title text-2xl font-bold mb-3">
-						<h3 class="wt-name"><?php the_title(); ?> </h3>
-					</div>
-                    <div class="faq-content">
-                        <div class="content-inner">
-                            <?php the_content(); ?>
+                while($query->have_posts()) :
+                $query->the_post();
+                ?>
+                            
+                   <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                                    
+                         <div class="faq-header">
+                           
+                            <h4><?php the_title(); ?></h4>
+                            <div class="faq-toggle">
+                                <i class="bi bi-plus"></i>
+                                <i class="bi bi-dash"></i>
+                            </div>
                         </div>
+                        <div class="faq-content">
+                            <div class="content-inner">
+                                <?php the_content(); ?>
+                            </div>
 
+                        </div>
                     </div>
-				</div>
-							<?php endwhile; wp_reset_postdata(); endif; ?>
+                                <?php endwhile; wp_reset_postdata(); endif; ?>
 
-		</div>
+            </div>
 
-    </div>
+        </div>
+
+    
 </section>
 <div class="wrapper d-none" id="page-wrapper">
 
