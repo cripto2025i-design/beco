@@ -78,28 +78,48 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div>
     
 </section>
-<section>
-    <div class="container">
 
-        <h3 class="text-heading title mb-4">Services</h3>
-        <div class="it-sv-counter row justify-content-center justify-content-md-start text-center text-md-start">
-            <div class="col-10 col-md-6 col-lg-4 pe-md-4 pe-lg-6">
-                <div class="it-service__item mb-30">
-                    <h3 class="it-service__item-title mb-20">Processus qualité</h3>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="it-service__item mb-30">
-                    <h3 class="it-service__item-title mb-20">Fiabilité technologique</h3>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="it-service__item mb-30">
-                    <h3 class="it-service__item-title mb-20">Veille normative</h3>
-                </div>
-            </div>
+<section class="service-section section-padding">
+     <div class="container tf-container">
+        <h3 class="text-heading title mb-4">
+            Services
+        </h3>
+
+                        <div class="wrapper_list_beco">
+							<div class="it-sv-counter row justify-content-center justify-content-md-start text-md-start">
+			
+								<?php
+								$args = array(
+									'post_type' => 'service',
+									'posts_per_page' => 6
+								);
+
+								$query = new WP_Query($args);
+
+								if($query->have_posts()) :
+
+								while($query->have_posts()) :
+								$query->the_post();
+								?>
+							
+								<div class="col-md-6 col-lg-4 pe-md-4 pe-lg-6">
+									<div class="service-box-item">
+
+										<div class="service-tilte cs-title text-2xl font-bold mb-3">
+											<h3 class="wt-name"><?php the_title(); ?> </h3>
+										</div>
+
+
+									</div>
+									
+									
+								</div>
+								<?php endwhile; wp_reset_postdata(); endif; ?>
+
+							</div>
+						</div>
         </div>
-    </div>
+
 </section>
 <section id="section-realisation" class="block-section section-realisation py-4">
     <div class="container tf-container">
