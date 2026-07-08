@@ -12,7 +12,7 @@ get_header();
 
 			
 			 <!-- Faq Section -->
-    <section id="faq" class="faq section">
+    <section id="faq" class="faq-section section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 

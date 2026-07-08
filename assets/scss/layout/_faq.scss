@@ -6,3 +6,17 @@
     padding-bottom: 20px;
 }
 
+.faq-section {
+    .faq-item {
+        margin-bottom: 0;
+        .faq-header {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            cursor: pointer;
+            gap: 0;
+            transition: all 0.3s ease; 
+        }
+    }
+}
+

@@ -9,6 +9,9 @@ jQuery(document).on('ready', function($) {
     });
 
   
+    $(".search-trigger, .main-search-input").on("click", function (e) {
+            e.stopPropagation();
+      });
     // Accrodion 
      /**
       * file:///D:/DesignWeb/theme_lock/01-buildx-html/assets/js/script.js
