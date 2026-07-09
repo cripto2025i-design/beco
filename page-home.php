@@ -105,11 +105,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<div class="col-md-6 col-lg-4 pe-md-4 pe-lg-6">
 									<div class="service-box-item">
 
-										<div class="service-tilte cs-title text-2xl font-bold mb-3">
+										<div class="service-item-tilte cs-title text-2xl font-bold mb-3">
 											<h3 class="wt-name"><?php the_title(); ?> </h3>
 										</div>
-
-
+                                        <div class="service-item-description">
+                                            <?php // the_content(); ?>
+                                            <p>Desc</p>
+                                        </div>
 									</div>
 									
 									

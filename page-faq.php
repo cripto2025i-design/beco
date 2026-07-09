@@ -8,6 +8,18 @@ get_header();
 
 ?>
 
+<div class="breadcumb-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcumb-content">
+                    <h2><?php the_title(); ?></h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 <div class="wrapper pt-site-wrapper" id="page-wrapper">
 
 			

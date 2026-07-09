@@ -118,7 +118,11 @@
 
 
 .b-button_primary {
-
+    display: inline-flex;
+	align-items: center;
+	line-height: 1;
+    padding: 1em 2em;
+    letter-spacing: 0.04em;
 }
 
 .b-button {
