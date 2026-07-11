@@ -56,7 +56,7 @@ get_header();
                                 <i class="bi bi-dash"></i>
                             </div>
                         </div>
-                        <div class="faq-content" style="display:none">
+                        <div class="faq-content">
                             <div class="content-inner">
                                 <?php the_content(); ?>
                             </div>

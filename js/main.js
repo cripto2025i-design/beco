@@ -49,6 +49,7 @@ jQuery(document).on('ready', function($) {
 
     
  /**
+  * file:///D:/DesignWeb/htmlcar/Clinic-1.0.0/faq.html
    * Frequently Asked Questions Toggle
    */
   document.querySelectorAll('.faq-item .faq-header').forEach((faqItem) => {
