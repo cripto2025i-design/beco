@@ -8,11 +8,26 @@
 
 .faq-section {
     .faq-item {
+        margin-top: 20px;
         margin-bottom: 0;
+        background-color: #F7F4ED;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #FF5E14
+
+        }
         .faq-header {
             display: flex;
             align-items: center;
-            padding: 0;
+            padding: 15px 25px 13px;
             cursor: pointer;
             gap: 0;
             transition: all 0.3s ease; 
