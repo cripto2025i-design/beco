@@ -29,8 +29,7 @@ get_header();
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row justify-content-center">
-          <div class="col-lg-9">
-
+          <div class="col-lg-12">
            
            <div class="faq-wrapper">
                 <?php
@@ -57,7 +56,7 @@ get_header();
                                 <i class="bi bi-dash"></i>
                             </div>
                         </div>
-                        <div class="faq-content">
+                        <div class="faq-content" style="display:none">
                             <div class="content-inner">
                                 <?php the_content(); ?>
                             </div>
