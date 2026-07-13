@@ -84,6 +84,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         <h3 class="text-heading title mb-4">
             Services
         </h3>
+        <p>Que votre projet concerne une réhabilitation ou une nouvelle construction, notre bureau d'étude spécialisé dispose des compétences techniques et des outils de calcul et de modélisation requis pour l’ingénierie structurelle.
+</p>
 
                         <div class="wrapper_list_beco">
 							<div class="it-sv-counter row justify-content-center justify-content-md-start text-md-start">
@@ -103,14 +105,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 								?>
 							
 								<div class="col-md-6 col-lg-4 pe-md-4 pe-lg-6">
-									<div class="service-box-item">
-
+									<div class="single-service service-box-item ">
+                                        <div class="icon-service">-</div>
 										<div class="service-item-tilte cs-title text-2xl font-bold mb-3">
 											<h3 class="wt-name"><?php the_title(); ?> </h3>
 										</div>
                                         <div class="service-item-description">
-                                            <?php // the_content(); ?>
-                                            <p>Desc</p>
+                                            
+                                            <p><?php the_content(); ?></p>
                                         </div>
 									</div>
 									
