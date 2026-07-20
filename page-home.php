@@ -79,7 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     
 </section>
 
-<section class="service-section section-padding">
+<section id="section-service" class="service-section section-padding grey-background">
      <div class="container tf-container">
         <h3 class="text-heading title mb-4">
             Services

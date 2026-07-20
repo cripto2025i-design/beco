@@ -50,7 +50,7 @@ get_header();
                                     
                          <div class="faq-header">
                            
-                            <h4><?php the_title(); ?></h4>
+                            <h4 class="mb-2"><?php the_title(); ?></h4>
                             <div class="faq-toggle">
                                 <i class="bi bi-plus"></i>
                                 <i class="bi bi-dash"></i>
