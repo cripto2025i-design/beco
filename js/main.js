@@ -64,6 +64,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  
+
+ /*** // FAQ Accordion D:/DesignWeb/2026/consulohtml-10/assets/js/main.js
+class FaqAccordion extends HTMLElement {
+  constructor() {
+    super();
+    this.opener = this.querySelectorAll(".accordion-opener");
+  }
+
+  connectedCallback() {
+    this.opener.forEach((opener) => {
+      opener.addEventListener("click", this.toggleHeight.bind(this));
+    });
+
+    this.firstBlock = this.querySelector(".accordion-block");
+    if (this.firstBlock) {
+      this.firstContent = this.firstBlock.querySelector(".accordion-content");
+      this.firstBlock.classList.add("active");
+      this.firstContent.style.maxHeight = this.firstContent.scrollHeight + "px";
+    }
+  }
+
+  toggleHeight(event) {
+    this.accBlock = event.target.closest(".accordion-block");
+    this.accContent = this.accBlock.querySelector(".accordion-content");
+
+    this.querySelectorAll(".accordion-block").forEach((block) => {
+      this.content = block.querySelector(".accordion-content");
+
+      if (block !== this.accBlock) {
+        block.classList.remove("active");
+        this.content.style.maxHeight = null;
+      }
+    });
+
+    this.accBlock.classList.toggle("active");
+
+    if (this.accBlock.classList.contains("active")) {
+      this.accContent.style.maxHeight = this.accContent.scrollHeight + "px";
+    } else {
+      this.accContent.style.maxHeight = null;
+    }
+  }
+}
+
+customElements.define("faq-accordion", FaqAccordion);*/
 
   /* FAQ ACCORDION brique-and-clic */
 function initFaq() {

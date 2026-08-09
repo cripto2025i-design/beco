@@ -6,7 +6,11 @@
     padding-bottom: 20px;
 }
 
-
+.single-service {
+    .service-title {
+        font-size: 30px;
+    }
+}
 .listing-content {
     display: flex;
     flex-direction: column;

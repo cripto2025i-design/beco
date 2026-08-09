@@ -108,7 +108,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									<div class="single-service service-box-item ">
                                         <div class="icon-service">-</div>
 										<div class="service-item-tilte cs-title text-2xl font-bold mb-3">
-											<h3 class="wt-name"><?php the_title(); ?> </h3>
+											<h3 class="service-title wt-name"><?php the_title(); ?> </h3>
 										</div>
                                         <div class="service-item-description">
                                             
@@ -124,6 +124,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
         </div>
 
+</section>
+<section id="section-why-choose" class="service-section section-padding">
+    <div class="container tf-container">
+        <h3 class="text-heading title mb-4">
+            Pourquoi choisir BET BECO ?
+        </h3>
+    </div>
+    
 </section>
 <section id="section-realisation" class="block-section section-realisation py-4">
     <div class="container tf-container">
@@ -158,7 +166,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     </div>
     <div>
-        <a href="#" class="d-none">Toutes nos réalisations</a> 
+        <a href="<?php the_field('lien_projets'); ?>" class="d_none">Toutes nos réalisations</a> 
+        <p>Client : <?php the_field('lien_projets'); ?></p>
         
     </div>
        

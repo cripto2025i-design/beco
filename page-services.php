@@ -60,10 +60,10 @@ get_header();
 								?>
 							
 								<div class="col-md-6 col-lg-4 pe-md-4 pe-lg-6">
-									<div class="service-box-item">
+									<div class="single-service service-box-item">
 
 										<div class="service-tilte cs-title text-2xl font-bold mb-3">
-											<h3 class="wt-name"><?php the_title(); ?> </h3>
+											<h3 class="service-title wt-name"><?php the_title(); ?> </h3>
 										</div>
 
 
